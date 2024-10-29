@@ -1,0 +1,140 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    background-color: white;
+    width: 900px;
+    height: 600px;
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.lol {
+    font-size: 2,5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.end {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 30px;
+}
+
+.fffirst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(87, 5, 87, 0.141);
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sssecond {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(87, 5, 87, 0.141);
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.ttthird{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(87, 5, 87, 0.141);
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.end img {
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.end span {
+    padding-left: 5px;
+}
+
+.boxy {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    column-gap: 100px;
+}
+
+.one, .second, .third {
+    background-color:hsl(300, 43%, 22%);
+    border-radius: 8px;
+    padding: 20px;
+}
+.second{
+    margin-top: 45px;
+}
+.third{
+    margin-top: 75px;
+}
+
+.together {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.boxy img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        min-height: 100vh;
+    }
+
+    .lol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .one, .second, .third {
+        margin-top: 20px;
+    }
+}
